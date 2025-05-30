@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class testbench {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter an int: ");
+        int userInt = input.nextInt();
+
+        System.out.print("Enter a float: ");
+        float userFloat = input.nextFloat();
+
+        System.out.print("Enter a char: ");
+        char userChar = input.next().charAt(0);
+        float floatSum = (float) userInt + userFloat;
+
+    
+        int asciiSum = userInt + (int) userChar;
+
+       
+        System.out.println("Results");
+        System.out.println("Sum of integer and float typeconv_float: " + floatSum);
+        System.out.println("Sum of integer and ASCII value of character: " + asciiSum);
+
+      
+    }
+}
